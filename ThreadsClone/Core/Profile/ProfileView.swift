@@ -19,17 +19,18 @@ struct ProfileView: View {
                         print("clicou")
                     } label: {
                         Image(systemName: "globe")
-                             .font(.system(size: 25))
+                            .font(.system(size: 25))
                     }
-
-                  
+                    
+                    
                     Spacer()
                     
                     Button {
                         print("clicou")
                     } label: {
-                        Image(systemName: "camera")
-                            .font(.system(size: 25))
+                        Image("instagramLogo")
+                            .resizable()
+                            .frame(width: 35, height: 35)
                     }
                     
                     Button {
@@ -38,12 +39,12 @@ struct ProfileView: View {
                         Image(systemName: "line.3.horizontal")
                             .font(.system(size: 28))
                     }
-
                     
-                
+                    
+                    
                     //MARK: SubHeader
                     
-
+                    
                 }
                 
                 HStack {
@@ -68,6 +69,19 @@ struct ProfileView: View {
                         .cornerRadius(30)
                 }
                 
+                HStack(spacing: 4) {
+                    Text("98 seguidores")
+                    
+                    Text(".")
+                        .fontWeight(.bold)
+                    
+                    Text("github.com/newlandslucas")
+                    
+                    Spacer()
+                }
+                .font(.footnote)
+                .foregroundColor(.gray)
+                
                 HStack {
                     Button {
                         print("clicou!")
@@ -75,8 +89,9 @@ struct ProfileView: View {
                         VStack(alignment: .center){
                             Text("Editar Perfil")
                                 .font(.footnote)
-                                .foregroundColor(.gray)
-
+                                .foregroundColor(.black)
+                                .fontWeight(.bold)
+                            
                         }
                         .frame(width: 170, height: 40)
                         .cornerRadius(18)
@@ -90,10 +105,10 @@ struct ProfileView: View {
                         VStack(alignment: .center){
                             Text("Compartilhar Perfil")
                                 .font(.footnote)
-                                .foregroundColor(.gray)
+                                .foregroundColor(.black)
+                                .fontWeight(.bold)
                         }
                         .frame(width: 170, height: 40)
-                        .cornerRadius(18)
                         .border(Color.black, width: 0.2)
                     }
                 }
@@ -101,8 +116,18 @@ struct ProfileView: View {
                 Spacer()
             }
             .padding()
+            
+            VStack(alignment: .center) {
+                Spacer()
+                
+                Text("You haven't posted any threads yet.")
+                    .foregroundColor(.gray)
+                
+                Spacer()
+            }
         }
-        .foregroundColor(.black)
+        .background(Color(.systemBackground))
+        .foregroundColor(Color(.label))
     }
 }
 
