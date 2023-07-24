@@ -9,6 +9,9 @@ import SwiftUI
 
 struct ProfileView: View {
     var body: some View {
+        
+        let link: String = "https://instagram.com/lucasnewlands_"
+
         ScrollView(.vertical, showsIndicators: false) {
             VStack(spacing: 25) {
                 
@@ -62,11 +65,14 @@ struct ProfileView: View {
                     
                     Spacer()
                     
-                    Image("userProfile")
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: 60, height: 60)
-                        .cornerRadius(30)
+                    Link(destination: URL(string: link)!) {
+                        Image("userProfile")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 60, height: 60)
+                            .cornerRadius(30)
+                    }
+                  
                 }
                 
                 HStack(spacing: 4) {

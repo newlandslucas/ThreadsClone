@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		942E286C2A6F0DED00D319D5 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942E286B2A6F0DED00D319D5 /* NotificationsView.swift */; };
 		949ED2512A5866BB00F4952D /* ThreadsCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949ED2502A5866BB00F4952D /* ThreadsCloneApp.swift */; };
 		949ED2532A5866BB00F4952D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949ED2522A5866BB00F4952D /* ContentView.swift */; };
 		949ED2552A5866BE00F4952D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 949ED2542A5866BE00F4952D /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		942E286B2A6F0DED00D319D5 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		949ED24D2A5866BB00F4952D /* ThreadsClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreadsClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		949ED2502A5866BB00F4952D /* ThreadsCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsCloneApp.swift; sourceTree = "<group>"; };
 		949ED2522A5866BB00F4952D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +44,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		942E286A2A6F0DD100D319D5 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				942E286B2A6F0DED00D319D5 /* NotificationsView.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
 		949ED2442A5866BB00F4952D = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +100,7 @@
 		949ED25F2A58672300F4952D /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				942E286A2A6F0DD100D319D5 /* Notifications */,
 				949ED26D2A586B9000F4952D /* UploadPost */,
 				949ED2662A58692800F4952D /* Search */,
 				949ED2652A58691F00F4952D /* Feed */,
@@ -223,6 +234,7 @@
 				949ED2512A5866BB00F4952D /* ThreadsCloneApp.swift in Sources */,
 				949ED26C2A58696000F4952D /* SearchView.swift in Sources */,
 				949ED2632A58686B00F4952D /* MainTabView.swift in Sources */,
+				942E286C2A6F0DED00D319D5 /* NotificationsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
